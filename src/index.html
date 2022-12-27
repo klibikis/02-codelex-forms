@@ -7,15 +7,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>04-forms</title>
 </head>
+
 <body>
-    <h1>
-        Hello World!!!
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
-
-
+    <section class = "section_center mt-30 mb-50">
+        <div class = "login_container">
+            <form class = "login_form">
+                <label for = "username">
+                    <h3 class = "text_label">Username</h3>
+                </label>
+                <input class = "input_style mb-20" type = "text" id = "username" name = "username" placeholder= "Your username" required>
+                <label for = "password">
+                    <h3 class = "text_label">Password</h3>
+                </label>
+                <input class = "input_style mb-20" type = "password" id = "password" name = "password" placeholder= "Your password" required>
+                <div class = "login_subscribe_container mb-20">
+                    <label class = "switch">
+                        <input type = "checkbox">
+                        <span class = "slider"></span>
+                    </label>
+                    <p class = "text_subscribe">Subscribe to News</p>
+                </div>
+                <input class = "button text_white mb-30" type="button" value="Sign In">
+                <a class = "login_forgot_password mb-30 text_center" href = "index.html"><p>Forgot your password?</p></a>
+                <div class = "login_divider mb-30"></div>
+                <p class = "text_center text_input_footer mb-15">or continue with</p>
+                <div class = "login_social_container">
+                    <div class = "login_button_social"><img src = "assets/images/login_icon1.svg" alt = "google icon"></div>
+                    <div class = "login_button_social"><img src = "assets/images/login_icon2.svg" alt = "facebook icon icon"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class = "section_center mb-50">
+        <div class = "contact_container">
+            <form class = "contact_form">
+                <h2 class = "mb-30">Contact Us</h2>
+                <div class = "contact_input_container mb-20">
+                        <label class = "contact_input_element">
+                            <h3 class = "text_label">Name</h3>
+                            <input class = "input_style" type = "text" placeholder = "Your name">
+                        </label>
+                        <label class = "contact_input_element">
+                            <h3 class = "text_label">Surname</h3>
+                            <input class = "input_style" type = "text" placeholder = "Your surname">
+                        </label>
+                </div>
+                <div class = "contact_input_container mb-40">
+                    <label class = "contact_input_element">
+                        <h3 class = "text_label">Email adress</h3>
+                        <input class = "input_style" type = "email" placeholder = "Your email">
+                    </label>
+                    <label class = "contact_input_element">
+                        <h3 class = "text_label">Birth date</h3>
+                        <input class = "input_style text_input_override" type = "date">
+                    </label>
+                </div>
+                <label class = "contact_checkbox_container mb-30">
+                    <input type = "checkbox">
+                    <span class = "checkmark"></span>
+                    <h3 class = "text_subscribe">Subscribe to News</h3>
+                </label>
+                <p class = "contact_textarea_label mb-5">Message</p>
+                <label class = "mb-30 text_center">
+                    <textarea class = "contact_textarea" placeholder="Type Message"></textarea>
+                </label>
+                <div class = "button_submit_container mb-30">
+                    <input class = "button_submit text_white" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
     <script src="/scripts.js"></script>
 </body>
 </html>
