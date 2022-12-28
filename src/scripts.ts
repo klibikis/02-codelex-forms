@@ -1,1 +1,5 @@
-console.log('Ready for coding');
+const btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+});

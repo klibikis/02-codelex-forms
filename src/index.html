@@ -14,17 +14,18 @@
 </head>
 
 <body>
+    <button class="btn-toggle">Toggle Dark-Mode</button>
     <section class = "section_center mt-30 mb-50">
         <div class = "login_container">
             <form class = "login_form">
                 <label for = "username">
                     <h3 class = "text_label">Username</h3>
                 </label>
-                <input class = "input_style mb-20" type = "text" id = "username" name = "username" placeholder= "Your username" required>
+                <input class = "input_style mb-20 bg_input" type = "text" id = "username" name = "username" placeholder= "Your username" required>
                 <label for = "password">
                     <h3 class = "text_label">Password</h3>
                 </label>
-                <input class = "input_style mb-20" type = "password" id = "password" name = "password" placeholder= "Your password" required>
+                <input class = "input_style mb-20 bg_input" type = "password" id = "password" name = "password" placeholder= "Your password" required>
                 <div class = "login_subscribe_container mb-20">
                     <label class = "switch">
                         <input type = "checkbox">
@@ -33,12 +34,12 @@
                     <p class = "text_subscribe">Subscribe to News</p>
                 </div>
                 <input class = "button text_white mb-30" type="button" value="Sign In">
-                <a class = "login_forgot_password mb-30 text_center" href = "index.html"><p>Forgot your password?</p></a>
+                <a class = "login_forgot_password mb-30 text_center text_label" href = "index.html"><p>Forgot your password?</p></a>
                 <div class = "login_divider mb-30"></div>
                 <p class = "text_center text_input_footer mb-15">or continue with</p>
                 <div class = "login_social_container">
-                    <div class = "login_button_social"><img src = "assets/images/login_icon1.svg" alt = "google icon"></div>
-                    <div class = "login_button_social"><img src = "assets/images/login_icon2.svg" alt = "facebook icon icon"></div>
+                    <a href = "https://fonts.google.com/" class = "login_button_social login_icon1"></a>
+                    <a href = "https://www.facebook.com/codelex.io" class = "login_button_social login_icon2"></a>
                 </div>
             </form>
         </div>
@@ -46,25 +47,25 @@
     <section class = "section_center mb-50">
         <div class = "contact_container">
             <form class = "contact_form">
-                <h2 class = "mb-30">Contact Us</h2>
+                <h2 class = "mb-30 text_label">Contact Us</h2>
                 <div class = "contact_input_container mb-20">
                         <label class = "contact_input_element">
                             <h3 class = "text_label">Name</h3>
-                            <input class = "input_style" type = "text" placeholder = "Your name">
+                            <input class = "input_style bg_input" type = "text" placeholder = "Your name">
                         </label>
                         <label class = "contact_input_element">
                             <h3 class = "text_label">Surname</h3>
-                            <input class = "input_style" type = "text" placeholder = "Your surname">
+                            <input class = "input_style bg_input" type = "text" placeholder = "Your surname">
                         </label>
                 </div>
                 <div class = "contact_input_container mb-40">
                     <label class = "contact_input_element">
                         <h3 class = "text_label">Email adress</h3>
-                        <input class = "input_style" type = "email" placeholder = "Your email">
+                        <input class = "input_style bg_input" type = "email" placeholder = "Your email">
                     </label>
                     <label class = "contact_input_element">
                         <h3 class = "text_label">Birth date</h3>
-                        <input class = "input_style text_input_override" type = "date">
+                        <input class = "input_style text_input_override bg_input" type = "date">
                     </label>
                 </div>
                 <label class = "contact_checkbox_container mb-30">
@@ -72,10 +73,118 @@
                     <span class = "checkmark"></span>
                     <h3 class = "text_subscribe">Subscribe to News</h3>
                 </label>
-                <p class = "contact_textarea_label mb-5">Message</p>
+                <p class = "contact_textarea_label text_label mb-5">Message</p>
                 <label class = "mb-30 text_center">
-                    <textarea class = "contact_textarea" placeholder="Type Message"></textarea>
+                    <textarea class = "contact_textarea bg_input" placeholder="Type Message"></textarea>
                 </label>
+                <div class = "button_submit_container mb-30">
+                    <input class = "button_submit text_white" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class = "section_center mb-50">
+        <div class = "contact_info_container">
+            <p class = "mt-30 text_white mb-30">Contact Information</p>
+            <p class = "text_white mb-30">Here’s some additional support text to help set user expectations. </p>
+            <div class = "contact_info_icons mb-15">
+                <img src = "assets/images/contact_info_icon1.svg" alt = "icon call">
+                <p class = "text_white">123-456-7890</p>
+            </div>
+            <div class = "contact_info_icons mb-15">
+                <img src = "assets/images/contact_info_icon2.svg" alt = "icon mail">
+                <p class = "text_white">support@minerva.com</p>
+            </div>
+        </div>
+        <div class = "contact_container_sm">
+            <form class = "contact_form">
+                <h2 class = "mb-30 text_label">Contact Us</h2>
+                <div class = "contact_input_container mb-20">
+                        <label class = "contact_input_element">
+                            <h3 class = "text_label">Name</h3>
+                            <input class = "input_style bg_input" type = "text" placeholder = "Your name">
+                        </label>
+                        <label class = "contact_input_element">
+                            <h3 class = "text_label">Surname</h3>
+                            <input class = "input_style bg_input" type = "text" placeholder = "Your surname">
+                        </label>
+                </div>
+                <div class = "contact_input_container mb-40">
+                    <label class = "contact_input_element">
+                        <h3 class = "text_label">Email adress</h3>
+                        <input class = "input_style bg_input" type = "email" placeholder = "Your email">
+                    </label>
+                    <label class = "contact_input_element">
+                        <h3 class = "text_label">Birth date</h3>
+                        <input class = "input_style text_input_override bg_input" type = "date">
+                    </label>
+                </div>
+                <p class = "contact_textarea_label text_label mb-5">Message</p>
+                <label class = "mb-30 text_center">
+                    <textarea class = "contact_textarea bg_input" placeholder="Type Message"></textarea>
+                </label>
+                <div class = "button_submit_container mb-30">
+                    <input class = "button_submit text_white" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class = "section_center mb-50">
+        <div class = "checkout_container">
+            
+                <h2 class = "mb-30 text_label">Checkout</h2>
+                <div class = "checkout_details_container mb-30">
+                    <div class = "checkout_details_element">
+                        <h4 class = "text_darkmode_title">Your Order</h4>
+                        <h3 class = "checkout_padding text_darkmode_title">Eggshell Plant Pot</h3>
+                        <div class = "checkout_details_element_order">
+                            <p class = "text_order_items">Size: Medium</p>
+                            <p class = "text_order_items">Qty: 1</p>
+                            <p class = "text_order_items">$25.00</p>
+                        </div>
+                    </div>
+                    <div class = "checkout_details_element">
+                        <h4 class = "text_darkmode_title">Delivery details</h4>
+                        <div class = "checkout_details_divider">
+                            <div class = "checkout_details_element_sm ">
+                                <h3 class = "text_darkmode_title">Adam Sandler</h3>
+                                <p class = "text_order_items">1234 Fake St</p>
+                                <p class = "text_order_items">Milwaukee, WI 53203</p>
+                            </div>
+                            <div class = "checkout_details_element_sm">
+                                <h3 class = "text_darkmode_title">Shipping Speed</h3>
+                                <p class = "text_order_items ">$7.00 No Rush Shipping</p>
+                                <p class = "text_order_items">Arrives by 1/16/22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class = "mb-15 text_darkmode_title">Payment Method</h4>
+                <form class = "contact_form"></form>
+                <div class = "checkout_input_container mb-40">
+                    <label class = "checkout_input_element">
+                        <h3 class = "text_label">Location</h3>
+                        <select class = "input_style bg_input text_label">
+                            <option value="location">Choose a location..</option>
+                            <option value="riga">Rīga</option>
+                            <option value="liepaja">Liepāja</option>
+                            <option value="aizkraukle">Aizkraukle</option>
+                            <option value="ogre">Ogre</option>
+                            <option value="bauska">Bauska</option>
+                        </select>
+                    </label>
+                    <div class = "checkout_inputs_divider">
+                        <label class = "checkout_input_element">
+                            <h3 class = "text_label">Random number</h3>
+                            <input class = "input_style text_input_override bg_input" type = "number">
+                        </label>
+                        <label class = "checkout_input_element">
+                            <h3 class = "text_label">Name again?</h3>
+                            <input class = "input_style text_input_override bg_input" type = "text">
+                        </label>
+                    </div>
+                </div>
+                
                 <div class = "button_submit_container mb-30">
                     <input class = "button_submit text_white" type="button" value="Submit">
                 </div>

@@ -1,5 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+// DARK MODE
+// ----------------------------------- //
+
+body.dark{
+  background: #130F1C;
+  .text_label{
+    color: #BAB9BD;
+  }
+  .text_subscribe{
+    color: #BAB9BD;
+  }
+  .login_container{
+    background: #1F1B29;
+  }
+  .contact_container{
+    background: #1F1B29;
+  }
+  .contact_container_sm{
+    background: #1F1B29;
+  }
+  .checkout_container{
+    background: #1F1B29;
+  }
+  .text_subscribe{
+    color: #BAB9BD;
+  }
+  .bg_input{
+    background: #2E2A36;
+  }
+  ::placeholder {
+    color: #99969E;
+  }
+  .text_darkmode_title{
+    color: #99969E;
+  }
+  .login_button_social{
+    background-color:  #2E2A36;
+    border: none;
+    &:hover{
+      background-color: #63626a;
+      cursor: pointer;
+      transition: .6s;
+    }
+  }
+  .login_icon1{
+    background-image: url("assets/images/login_icon1_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .login_icon2{
+    background-image: url("assets/images/login_icon2_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .checkmark {
+    background: #2E2A36;
+    border: 1px solid #f0eded;
+  }
+  .slider {
+    background: #2E2A36;
+  }
+}
+
+// ----------------------------------- //
+
+
+// ----------------------------------- //
+
 *{
   box-sizing: border-box;
 }
@@ -23,6 +91,14 @@ h2{
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
+  letter-spacing: -0.02em;
+}
+h4{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: -0.02em;
 }
 
@@ -101,6 +177,15 @@ h2{
   font-size: 16px;
   line-height: 24px;
 }
+.text_order_items{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5A5761;
+}
+
 
 // LOGIN
 // ----------------------------------- //
@@ -141,6 +226,20 @@ h2{
   width: 100%;
 }
 
+// IMAGE CLASSES FOR DARKMODE
+// ----------------------------------- //
+
+.login_icon1{
+  background-image: url("assets/images/login_icon1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login_icon2{
+  background-image: url("assets/images/login_icon2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 //BUTTONS
 
 .button{
@@ -164,7 +263,6 @@ h2{
     transition: .6s;
   }
 }
-
 .login_button_social{
   display: flex;
   justify-content: center;
@@ -174,7 +272,7 @@ h2{
   border: 1px solid #ECECEE;
   border-radius: 5px;
   &:hover{
-    border: 1px solid #9276f7;
+    background-color: #dcdcdc;
     cursor: pointer;
     transition: .6s;
   }
@@ -205,6 +303,12 @@ h2{
     transition: .6s;
   }
 }
+.btn-toggle{
+  position: sticky;
+  top: 30px;
+  left: 30px;
+
+}
 
 // CONTACT US SECTION
 // ----------------------------------- //
@@ -212,7 +316,7 @@ h2{
 .contact_container{
   padding: 32px;
   width: 35%;
-  min-width: 250px;
+  min-width: 600px;
   background:  #FFFFFF;
   box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -243,6 +347,90 @@ h2{
   margin-left: 10px;
   font-size: 12px;
   line-height: 16px;
+}
+
+// CONTACT INFO
+// ----------------------------------- //
+
+.contact_container_sm{
+  padding: 32px;
+  width: 25%;
+  min-width: 400px;
+  background:  #FFFFFF;
+  box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
+  
+}
+.contact_info_container{
+  background: #651FFF;
+  border-radius: 10px 0px 0px 10px;
+  width: 200px;
+  min-width: 100px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.contact_info_icons{
+  display: flex;
+  gap: 10px;
+}
+
+// CHECKOUT
+// ----------------------------------- //
+
+.checkout_container{
+  padding: 32px;
+  width: 45%;
+  min-width: 700px;
+  background:  #FFFFFF;
+  box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.checkout_details_container{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.checkout_details_element{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 47%;
+}
+.checkout_details_divider{
+  display: flex;
+  gap: 20px;
+}
+.checkout_details_element_sm{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.checkout_details_element_order{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 55px;
+}
+.checkout_padding{
+  padding-left: 55px;
+}
+.checkout_input_container{
+  display: flex;
+  gap: 2%;
+  width: 100%;
+  justify-content: space-between;
+}
+.checkout_input_element{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.checkout_inputs_divider{
+  display: flex;
+  gap: 15px;
+  width: 49%;
 }
 
 // CHECKBOX
@@ -395,4 +583,93 @@ input:checked + .slider:before {
       transition: .6s;
     }
   }
+  .contact_info_container{
+    display:none;
+  }
+  .contact_container_sm{
+    width: 70%;
+    min-width: 250px;
+  }
+  .contact_container{
+    width: 70%;
+    min-width: 250px;
+  }
+  .checkout_container{
+    padding: 32px;
+    width: 70%;
+    min-width: 400px;
+    background:  #FFFFFF;
+    box-shadow: 40px 40px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .checkout_details_divider{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .checkout_details_container{
+    flex-direction: column;
+  }
+  .checkout_details_element{
+    width: 100%;
+    gap: 2px;
+  }
+
+  .checkout_details_element_order{
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .checkout_input_container{
+   flex-direction: column;
+   gap: 5px;
+  }
+  .checkout_input_element{
+    width: 100%;
+  }
+  .checkout_inputs_divider{
+    width: 100%;
+  }
+}
+
+// DARKMODE BUTTON
+
+.btn-toggle {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-toggle:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-toggle {
+  background-image: linear-gradient(
+    to right,
+    #29323c,
+    #485563,
+    #2b5876,
+    #4e4376
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
